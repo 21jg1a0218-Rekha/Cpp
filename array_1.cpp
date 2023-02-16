@@ -1,4 +1,5 @@
 //author :P.kanchana Rekha 14/2/23
+/* Take 10 integer inputs from uset and store them in an array and print them on screen*/
 #include<bits/stdc++.h>
 using namespace std;
 int main()
