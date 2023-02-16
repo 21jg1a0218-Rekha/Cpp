@@ -1,4 +1,6 @@
 //Author:p.Kanchana Rekha 14\2\23
+/*take 10 integers from user and store them in an array.Again ask user to give a number.now ,tell 
+user wheather thatnumber is present in an array or not.*/
 #include<bits/stdc++.h>
 using namespace std;
 int main()
