@@ -1,3 +1,6 @@
+//Author:P.Kanchana Rekha;
+/* To rearrange the elements in the zig-zag fashion way
+the format zig-zag array in form a<b>c<d>e<f
 #include<bits/stdc++.h>
 using namespace std;
 void(zig_zag_array(int arr[],int n))
