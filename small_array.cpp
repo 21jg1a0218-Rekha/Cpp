@@ -1,14 +1,14 @@
 //Author;P.Kanchana Rekha,
-/*To find the second laregest element in the array*/
+/*To find the second smallest element in the array*/
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-    int n,temp=0,i,j;
+    int i,j,n,temp;
     cout<<"enter the n value:";
     cin>>n;
     int arr[n];
-    cout<<"enter the values in array:";
+    cout<<"enter the elements in the array:";
     for(i=0;i<n;i++)
     {
         cin>>arr[i];
@@ -25,7 +25,6 @@ int main()
             }
         }
     }
-    
-    cout<<"the second smallest element in the array="<<arr[1];
+    cout<<"the second smallest element ="<<arr[1]<<"\n the largest element element ="<<arr[n-1];
     return 0;
 }
