@@ -1,0 +1,26 @@
+//to print adam number
+#include<bits/stdc++.h>
+using namespace std;
+int reversedigits(int num)
+{
+    int rev=0;
+    while(num>0)
+    {
+        rev=rev*10+num%10;
+        num/=10;
+    }
+    return rev;
+}
+int main()
+{
+    int num;
+    cout<<"enter a number:";
+    cin>>num;
+    cout<<num<<"is";
+    int rev=reversedigits(num);
+    if((num*num)==(reversedigits(rev*rev)))
+        cout<<"Adam number";
+    else
+    cout<<"not a adam number";
+    return 0;
+}
