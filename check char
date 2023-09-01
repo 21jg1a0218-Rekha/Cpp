@@ -1,0 +1,22 @@
+//T write a program print 1 if given char is upper else if it is lower  0 otherwise 1
+#include<iostream>
+using namespace std;
+
+int main() {
+	// Write your code here
+	char k;
+	cin>>k;
+	if(k>='A'&&k<='Z')
+	{
+		cout<<"1"<<endl;
+	}
+	else if(k>='a'&&k<='z')
+	{
+		cout<<"0"<<endl;
+	}
+	else{
+		cout<<"-1"<<endl;
+	}
+	return 0;
+	
+}
