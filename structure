@@ -1,0 +1,33 @@
+//To create a person information by using structurse
+#include<bits/stdc++.h>
+using namespace std;
+struct company
+{
+    string name;
+    int age;
+    int salary;
+};
+int main()
+{
+    int n;
+    cin>>n;
+    company p[n];
+   // cin>>p.name>>p.age>>p.salary;
+    //cout<<p.name<<" "<<p.age<<" "<<p.salary;
+    for(int i=0;i<n;i++)
+    {
+        cout<<"enter person name:"<<endl;
+        cin>>p[i].name;
+        cout<<"enter person age:"<<endl;
+        cin>>p[i].age;
+        cout<<"enter person salary:"<<endl;
+        cin>>p[i].salary;
+
+    }
+    cout<<"every person details from the company:"<<endl;
+    for(int i=0;i<n;i++)
+    {
+        cout<<"name:"<<p[i].name<<endl<<"age"<<p[i].age<<endl<<"salary"<<p[i].salary<<endl;
+    }
+    return 0;
+}
