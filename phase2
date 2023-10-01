@@ -1,0 +1,54 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<string>s;
+    vector<int>kpt;
+    vector<int>ppt;
+    vector<int>p1;
+    vector<int>p2;
+    vector<int>tp;
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        string team_name;
+        int points;
+        int k=0;
+        int position_points;
+        int a;
+        int b=0;
+        int c;
+        cin>>team_name;
+        for(int j=0;j<4;j++)
+        {
+            cin>>points;
+            k+=points;
+            p1.push_back(k);
+
+
+        }
+    
+        cin>>position_points;
+        for(int j=0;j<4;j++)
+        {
+            cin>>a;
+            b+=a;
+            p2.push_back(b);
+         
+        }
+        cin>>c;
+        s.push_back(team_name);
+        ppt.push_back(position_points+c);
+        kpt.push_back(k+b);
+        tp.push_back(k+b+position_points+c);
+
+    }
+    cout<<"TEAM-NAME \t KILL-POINTS \t POSITION-POINTS \t TOTAL-POINTS"<<endl;
+    for(int i=0;i<n;i++)
+    {
+        cout<<s[i]<<"\t"<<kpt[i]<<"\t"<<ppt[i]<<"\t"<<tp[i]<<endl;
+    }
+    return 0;
+
+}
